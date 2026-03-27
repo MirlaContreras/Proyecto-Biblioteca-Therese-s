@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Knewave&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+
+	font-family: "Oswald", sans-serif ;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main{
+	width: 100%;
+}
+
+.resumenLibros, .contAdd{
+	background-color: #a9a251ff;
+	height: 100%;
+}
+
+.cabecera, .barraNavegador, .cabecera #log-out, .boton-mensaje, .centrar, .barraBusqueda{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.cabecera{
+	width: 98%;
+	height: 100px;
+	background-color: #44442aff ;
+	padding: 10px 50px;
+	margin-top: 20px;
+
+}
+
+.cabecera a{
+		text-decoration: none;
+}
+.cabecera p{ /*//GENERAL*/
+	
+	font-weight: 200;
+
+	color: #fefaf9ff;
+	font-size: 3rem;
+}
+
+.barraNavegador{/*//DASHBOARD*/
+	width: 98%;
+	padding: 10px 50px;
+	background-color: #bad9ebff;
+	font-size: 1.5rem;
+	color: #fefaf9ff;
+	margin-top: 10px;
+
+
+}
+
+.navegador{
+
+	color: #fefaf9ff;
+	display: flex;
+	list-style: none;
+	gap: 100px;
+
+}
+
+.navegador a{
+	display: block;
+	padding: 10px 100px;
+	border-radius: 50px;
+	text-decoration: none;
+	color: inherit;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+#verde a{
+	background-color: #44442aff;
+}
+
+#marron a{
+	background-color: #6e4e37ff;
+}
+
+#beige a{
+	background-color: #eae3d1ff;
+	color: #44442aff;
+}
+
+.cabecera #log-out{
+	color: #44442aff;
+	font-weight: 300;
+	text-decoration: none;
+	font-size: 1rem;
+	margin-left: auto;
+	width: 250px;
+	background-color: #eae3d1ff;
+	border-radius: 30px;
+	height: 60%;
+
+
+}
+
+#contPrincipal{
+
+	
+	background-color: #44442aff;
+}
+
+#contLogin{
+	background-color: #eae3d1ff;
+	width: 500px;
+	padding: 20px  20px;
+	border-radius: 40px;
+	text-align: center;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+	margin-top: auto;
+	margin-bottom: auto;
+
+
+}
+
+form label{
+
+	display: block; //para que ocupe su propia linea
+	margin-bottom: 5px;
+	color: #44442aff;	
+	font-size: 1.8rem;
+
+}
+
+form input{
+	width: 80%;
+	background-color: #a6bed8ff;
+	border: none;
+	height: 45px;
+	padding: 0 15px;
+	font-size: 1rem;
+	justify-content: center;
+
+}
+
+form input:focus{
+	outline: 2px solid #6e4e37ff;
+}
+
+button#ingresar{
+	width: 70%;
+	height: 45px;
+	background-color: #6e4e37ff;
+	color: #fefaf9ff;
+	font-weight: 500;
+	font-size: 1.5rem;
+	border: none;
+	padding: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+#link-registro{
+	font-size: 1rem;
+	color: #6e4e37ff;
+	font-weight: 200;
+}
+
+#link-registro a{
+	text-decoration: none;
+	color: #6e4e37ff;
+	font-weight: 400;
+
+
+}
+
+#resumenDash{
+	margin-top: 10px;
+	display: flex;
+	margin-left: 40px;
+    align-items: center;
+    gap: 50px;
+    font-size: 2rem;
+    color: #44442aff;
+    font-weight: 200;
+}
+
+.carrusel{
+
+	display: flex;
+	gap: 40px;
+	margin: 10px 100px;
+	
+	overflow: hidden;
+
+	}
+
+.contCat{
+	display: block;
+	padding: 20px 10px;
+	background-color: rgba(234, 227, 209, 1);
+	width: 100%;
+	margin: 0 auto;
+	max-height: 350px;
+	overflow-y: auto;
+	scroll-snap-type: y mandatory;
+	border-radius: 30px;
+
+}
+
+.tarjetaDash{
+	display: flex;
+	width: 100%;
+	margin: 10px auto;
+	align-items: center;
+	background-color: rgba(110, 75, 55, 0.5);
+	border-radius: 25px;
+}
+
+.detalleLibroDash{
+	
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+}
+
+
+.contCat img{
+	width: 100px;
+}
+/* 1. Para Firefox */
+.contCat {
+    scrollbar-width: none;
+}
+
+/* 2. Para Chrome, Safari y Edge (Los navegadores más usados) */
+.contCat::-webkit-scrollbar {
+    display: none;
+}
+
+.contAdd{
+}
+
+.formAgregar{
+	display: flex;
+	width: 70%;
+	max-height:450px;
+	background-color: #eae3d1ff;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: 10px;
+	border-radius: 35px;
+}
+
+.detalleAgregar{
+	display: block;
+	font-size: 1.5rem;
+	padding: 10px 10px;
+	margin-left: 40px;
+	width: 60%;
+}
+
+.detalleAgregar label{
+	font-size: 0.8rem;
+}
+
+.selectEstado{
+	display: flex;
+	width: 80%;
+	margin: 15px 0;
+}
+
+.selectEstado select{
+	width: 100%;
+}
+
+.selectEstado label{
+	width: 100%;
+}
+
+select, .boton-archivo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  color: #6e4e37ff;
+  border-radius: 5px;
+  border: 2px solid #6e4e37ff;
+  cursor: pointer;
+  background-color: rgba(110, 78, 55, 0.3);
+}
+
+.inputEscondido{
+	display: none;
+}
+
+button.boton-guardar{
+
+	width: 200px;
+	height: 50px;
+	background-color: rgba(110, 78, 55, 1);
+	box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+	font-size: 2rem;
+	color: #fefaf9ff;
+	outline: none;
+	border: none;
+	border-radius: 30px;
+	font-weight: 400;
+	
+	}
+
+	button.boton-guardar-pass, button.boton-cerrar-pass{
+	height: 40px;
+    width: 100px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    font-size: 0.7rem;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #44442aff;
+	}
+
+
+	button.boton-guardar-pass{
+		background-color:#a9a251ff;
+	}
+
+button.boton-actualizar-pass, button.boton-guardar-datos{
+	
+	height: 50px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+	font-size: 1.5rem;
+	color: #fefaf9ff;
+	outline: none;
+	border: none;
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+button.boton-actualizar-pass{
+	background-color: rgba(169, 162, 81, 1.0) ;
+	width: 400px;
+	border-radius: 5px;
+}
+
+button.boton-guardar-datos{
+	background-color: rgba(110, 78, 55, 1);
+	width: 250px;
+	border-radius: 30px;
+}
+
+
+#mensaje-registro{
+
+
+}
+
+.boton-mensaje{
+	flex-direction: column;
+	text-align: center;
+}
+
+
+
+.fotoPerfil .foto-redonda{
+
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+}
+
+
+
+#inputFotoOculta {
+	display: none; 
+	
+}
+
+#btn-sin-estilo{
+	all: unset; /* Elimina todos los estilos del navegador y heredados */
+    cursor: pointer;
+}
+
+
+
+
+.contenedorPerfil{
+	height: 80%;
+	width: 60%;
+	background-color: #eae3d1ff;
+	border-radius: 35px;
+	margin-top: 10px;
+	padding: 20px 20px;
+	text-align: center;
+}
+
+
+.datosPerfil label{
+	font-size: 1rem;
+}
+
+.containerHistorial{
+
+	width: 100%;
+	padding: 10px 20px;
+}
+
+
+.libro-item.clickable{
+	display: flex;
+	height: 200px;
+	background-color: #fefaf9ff;
+	border-radius: 35px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 15px;
+}
+
+.barraBusqueda{
+	height: 80px;
+	width: 100%;
+}
+
+.barraBusqueda form{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	background-color: #6e4e37ff;
+	height: 100%;
+	align-items: center;
+	padding: 0px 30px;
+
+}
+
+
+
+.barraBusqueda h2{
+	width: 100%;
+	color: #44442aff;
+	margin-left: 30px;
+}
+
+.barraBusqueda h2, .barraBusqueda form{
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+.barraBusqueda label{
+	color: #fefaf9ff;
+}
+
+#busqueda{
+	
+	color: #6e4e37ff;
+	 width: 50%;
+	background-color: #eae3d1ff;
+	justify-self: center;
+}
+
+.barraBusqueda a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.area-comentario, .libro-info{
+	width: 30%;
+}
+.libro-item.clickable img{
+	width: 15%;
+	object-fit: contain;
+}
+
+.vistaRegistro{
+
+	background-color: #a9a251ff;
+}
+
+.formRegistro{
+	margin-top: 15px;
+	   background-color: #eae3d1ff;
+    display: flex;
+    padding: 20px;
+    border-radius: 50px;
+    width: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formRegistro form{
+
+	  width: 100vh;
+    display: contents;
+}
+
+.formRegistro button{
+
+	margin-top: 10px;
+}
+.borrarLibro{
+	display: flex;
+    flex-flow: row-reverse;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+/* =========================================
+   Estilos del Footer
+   ========================================= */
+
+.main-footer {
+    /* Verde oliva oscuro como fondo principal */
+    background-color: #4c5236;
+    /* Crema/Beige claro para el texto general */
+    color: #f1ebd9; 
+    width: 100%;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: auto; 
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.footer-credits p, 
+.footer-copyright p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    /* Azul mutado para textos secundarios */
+    color: #a8bdd1;
+}
