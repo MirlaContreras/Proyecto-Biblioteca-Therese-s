@@ -344,39 +344,6 @@ button.boton-actualizar-pass, button.boton-guardar-datos{
 	margin-top: 5px;
 }
 
-button.boton-actualizar-pass{
-	background-color: rgba(169, 162, 81, 1.0) ;
-	width: 400px;
-	border-radius: 5px;
-}
-
-button.boton-guardar-datos{
-	background-color: rgba(110, 78, 55, 1);
-	width: 250px;
-	border-radius: 30px;
-}
-
-
-#mensaje-registro{
-
-
-}
-
-.boton-mensaje{
-	flex-direction: column;
-	text-align: center;
-}
-
-
-
-.fotoPerfil .foto-redonda{
-
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-}
-
-
 
 #inputFotoOculta {
 	display: none; 
@@ -391,37 +358,8 @@ button.boton-guardar-datos{
 
 
 
-.contenedorPerfil{
-	height: 80%;
-	width: 60%;
-	background-color: #eae3d1ff;
-	border-radius: 35px;
-	margin-top: 10px;
-	padding: 20px 20px;
-	text-align: center;
-}
 
 
-.datosPerfil label{
-	font-size: 1rem;
-}
-
-.containerHistorial{
-
-	width: 100%;
-	padding: 10px 20px;
-}
-
-
-.libro-item.clickable{
-	display: flex;
-	height: 200px;
-	background-color: #fefaf9ff;
-	border-radius: 35px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	padding: 15px;
-}
 
 .barraBusqueda{
 	height: 80px;
@@ -469,13 +407,6 @@ button.boton-guardar-datos{
 	color: inherit;
 }
 
-.area-comentario, .libro-info{
-	width: 30%;
-}
-.libro-item.clickable img{
-	width: 15%;
-	object-fit: contain;
-}
 
 .vistaRegistro{
 
@@ -502,43 +433,4 @@ button.boton-guardar-datos{
 .formRegistro button{
 
 	margin-top: 10px;
-}
-.borrarLibro{
-	display: flex;
-    flex-flow: row-reverse;
-    margin-left: auto;
-    margin-right: 20px;
-}
-
-/* =========================================
-   Estilos del Footer
-   ========================================= */
-
-.main-footer {
-    /* Verde oliva oscuro como fondo principal */
-    background-color: #4c5236;
-    /* Crema/Beige claro para el texto general */
-    color: #f1ebd9; 
-    width: 100%;
-    padding: 10px 20px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin-top: auto; 
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-
-.footer-credits p, 
-.footer-copyright p {
-    margin: 5px 0;
-    font-size: 0.9em;
-    /* Azul mutado para textos secundarios */
-    color: #a8bdd1;
 }
