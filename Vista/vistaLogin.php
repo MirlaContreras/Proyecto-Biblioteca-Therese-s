@@ -17,7 +17,7 @@
 		<div id="contLogin">
 		<form action="../Controlador/loginControlador.php" method="POST" id="formCont">
 			
-			<label name="usuario">Ingrese su nombre de usuarios</label>
+			<label name="usuario">Ingrese su nombre de usuario</label>
 			<input type="text" name="usuario" id="usuario" required>
 
 			<label name="password">Ingrese su contraseña</label>

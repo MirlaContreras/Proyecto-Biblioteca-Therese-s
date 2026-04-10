@@ -137,7 +137,7 @@ class manejadorLibros{
 				historiallibros h
 			JOIN
 				libros l ON h.idLibros = l.idLibros
-			LEFT JOIN comentarios c ON h.idLibros = c.idLibros AND h.idUsuarios = C.idUsuarios
+			LEFT JOIN comentarios c ON h.idLibros = c.idLibros AND h.idUsuarios = c.idUsuarios
 			WHERE
 				h.idUsuarios = ?";
 
